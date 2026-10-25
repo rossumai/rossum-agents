@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -2577,7 +2577,7 @@ requires-dist = [
     { name = "pytest-cov", marker = "extra == 'tests'", specifier = ">=4.0.0" },
     { name = "python-multipart", marker = "extra == 'all'", specifier = ">=0.0.22" },
     { name = "python-multipart", marker = "extra == 'api'", specifier = ">=0.0.22" },
-    { name = "rossum-api", specifier = ">=3.13.1" },
+    { name = "rossum-api", specifier = ">=3.13.3" },
     { name = "rossum-mcp", git = "https://github.com/rossumai/rossum-agents.git?subdirectory=rossum-mcp" },
     { name = "slack-sdk", extras = ["optional"], marker = "extra == 'all'", specifier = ">=3.27.0" },
     { name = "slack-sdk", extras = ["optional"], marker = "extra == 'slack'", specifier = ">=3.27.0" },
@@ -2616,7 +2616,7 @@ dev = [{ name = "pytest", specifier = ">=9.0.2" }]
 
 [[package]]
 name = "rossum-api"
-version = "3.13.1"
+version = "3.17.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -2624,9 +2624,9 @@ dependencies = [
     { name = "httpx" },
     { name = "tenacity" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ec/c6/d34844a87a91ac558a623d072069d65c19e635ea258e5bd7f4a3f8741593/rossum_api-3.13.1.tar.gz", hash = "sha256:5307e272592904a8170a4dd633ce8b1b1f726b63a1af30090353a4fbd43a2a6d", size = 162380, upload-time = "2026-03-30T07:09:33.109Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/d5/fa50eea1b905eea45c5f1a674b68256d24f8252f69064da741401886e380/rossum_api-3.17.0.tar.gz", hash = "sha256:42df824cad66295484f502f097ebddf07e426ed3450b5fd5f88ef264a0675ccf", size = 170656, upload-time = "2026-10-13T11:02:53.94Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ab/de/84ef1adad5809fad7bb95c8338b245ec299df5c9c2c08a61aa58f4be4c0b/rossum_api-3.13.1-py3-none-any.whl", hash = "sha256:22bf0dabc961bb685d9037c1a0ae89c5fe16a34d488a8586114b07b57c2de2f8", size = 78682, upload-time = "2026-03-30T07:09:32.161Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/42/6fc462b36c4bb115c2669b4934f0c8824fcc61f95e37d1214d06065ffade/rossum_api-3.17.0-py3-none-any.whl", hash = "sha256:b4a462d47ee71b1445f7535b638f30a570a138057513e4750d7c114d934c2e1f", size = 85136, upload-time = "2026-10-13T11:02:52.596Z" },
 ]
 
 [[package]]
@@ -2738,8 +2738,8 @@ name = "secretstorage"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cryptography", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
-    { name = "jeepney", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "cryptography" },
+    { name = "jeepney" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/1c/03/e834bcd866f2f8a49a85eaff47340affa3bfa391ee9912a952a1faa68c7b/secretstorage-3.5.0.tar.gz", hash = "sha256:f04b8e4689cbce351744d5537bf6b1329c6fc68f91fa666f60a380edddcd11be", size = 19884, upload-time = "2025-11-23T19:02:53.191Z" }
 wheels = [
